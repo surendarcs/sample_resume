@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+    <header>
+        <h1 style="color:black;">Welcome to My Portfolio</h1>
+        <div id="headerContent"></div>
+    </header>
+
+    <main>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="loadContent('aboutme.html'); return false;">About Me</a></li>
+                <li><a href="#" onclick="loadContent('education.html'); return false;">Education</a></li>
+                <li><a href="#" onclick="loadContent('project.html'); return false;">Projects</a></li>
+                <li><a href="#" onclick="loadContent('additionalinfo.html'); return false;">Additional Info</a></li>
+                <li><a href="#" onclick="loadContent('contactme.html'); return false;">Contact Me</a></li>
+            </ul>
+        </nav>
+
+        <section id="contentSection">
+            <iframe id="contentFrame" src="aboutme.html" style="background-color: #f9f9f9;"></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footerContent"></div>
+        <hr>
+        <p style="color: #28a745;">Author: Surendar B</p>
+        <p>&copy; 2024 All Rights Reserved</p>
+        <small><a href="mailto:surendarbalaji2006@gmail.com" style="color: #ff6347;">surendarbalaji2006@gmail.com</a></small>
+    </footer>
+</body>
+</html>
